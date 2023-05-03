@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--
-New Event
-http://www.templatemo.com/tm-486-new-event
--->
+
 <title>New Event - Responsive HTML Template</title>
 <meta name="description" content="">
 <meta name="author" content="">
@@ -62,7 +59,6 @@ http://www.templatemo.com/tm-486-new-event
 				<li><a href="#program" class="smoothScroll">Programs</a></li>
 				<li><a href="#register" class="smoothScroll">Register</a></li>
 				<li><a href="#venue" class="smoothScroll">Venue</a></li>
-				<li><a href="#sponsors" class="smoothScroll">Sponsors</a></li>
 				<li><a href="#contact" class="smoothScroll">Contact</a></li>
 			</ul>
 
@@ -80,7 +76,7 @@ http://www.templatemo.com/tm-486-new-event
 		<div class="row">
 
 			<div class="col-md-12 col-sm-12">
-				<h3 class="wow bounceIn" data-wow-delay="0.9s">July 22 - 26 in San Francisco, CA</h3>
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">July 21 - 26 in San Francisco, CA</h3>
 				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Web Design Conference</h1>
 				<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
 				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">REGISTER NOW</a>
@@ -567,16 +563,16 @@ http://www.templatemo.com/tm-486-new-event
 					<p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
 					<p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.</p>
-					<a href="#" class="btn btn-danger">DOWNLOAD NOW</a>
 				</div>
 			</div>
+
 
 			<div class="wow fadeInUp col-md-5 col-sm-6" data-wow-delay="0.9s">
 				<div class="contact_detail">
 					<div class="section-title">
 						<h2>Keep in touch</h2>
 					</div>
-					<form action="#" method="post">
+					<form action="includes/forma.php" method="post">
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
 					  	<input name="email" type="email" class="form-control" id="email" placeholder="Email">
 					  	<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
@@ -633,6 +629,5 @@ http://www.templatemo.com/tm-486-new-event
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
-
 </body>
 </html>

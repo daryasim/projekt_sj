@@ -540,13 +540,6 @@ footer {
 
 
 
-/*---------------------------------------
-   Sponsors section              
------------------------------------------*/
-#sponsors img {
-  margin-top: 18px;
-}
-
 
 
 /*---------------------------------------
@@ -555,17 +548,15 @@ footer {
 #contact {
     background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
-#contact .contact_des {
-  padding-top: 3rem;
-  padding-right: 2rem;
-}
+
 
 #contact .contact_detail {
   background: #ffffff;
-  padding: 5rem 5rem 12rem 5rem;
+  padding: 5rem 10rem 10rem 5rem;
+ 
 }
 
 #contact .form-control {
@@ -576,6 +567,7 @@ footer {
   box-shadow: none;
   margin-bottom: 16px;
   transition: all 0.4s ease-in-out;
+  
 }
 
 #contact .form-control:focus {
