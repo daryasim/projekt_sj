@@ -1,27 +1,3 @@
-<!-- =========================
-    CONTACT SECTION   
-============================== -->
-
-<?php
-if(isset($_POST['submit'])) {
-
-	$name = $_POST["name"];
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
-
-	$to = "dary.simakova@gmail.com";
-    $headers = "From: " . $email;
-    $note = "You have received an email from " . $name . "\n\n" .$message;
-
-    if (mail($to, $subject, $note, $headers)) {
-		
-}
-
- 
-
-?>
-
 
 <section id="contact" class="parallax-section">
 	<div class="container">
@@ -42,10 +18,9 @@ if(isset($_POST['submit'])) {
 					<div class="section-title">
 						<h2>Keep in touch</h2>
 					</div>
-					<form action="contact.phpl" method="post">
+					<form action="includes/kontakt.php" method="post">
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name" required>
 					  	<input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
-						<input name="subject" type="subject" class="form-control" id="subject" placeholder="Subject" required>
 					  	<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message" required></textarea>
 						<div class="col-md-6 col-sm-10">
 							<input name="submit" type="submit" class="form-control" id="submit" value="SEND">

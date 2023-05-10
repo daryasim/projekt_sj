@@ -5,10 +5,6 @@ $user = "root";
 $pass = "";                                   
 $database="admin";           
 
-$conn=mysqli_connect($server,$user,$pass,$database);
-
-if($conn->connect_error){
-    die("Connection failed : ".$conn->connect_error);
-}
-
+$dbh = 'mysql:host='.$server.';dbname='.$database.';charset=utf8';
+$pdo = new PDO($dbh,$user,$pass);
 ?>
