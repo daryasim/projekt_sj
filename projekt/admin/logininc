@@ -1,0 +1,23 @@
+<?php
+include('auth.php');
+
+if(isset($_POST['submit'])){
+	
+	$user=$_POST['user'];
+    $pass=$_POST['pass'];
+    $login_query = "SELECT * FROM users WHERE user = '$user' AND pass = '$pass'";
+    $login_query_run = mysqli_query($connection, $query);
+    
+	
+	if(mysqli_fetch_array($login_query_run)){
+
+		$_SESSION['username']=$user;
+        header('Location: index.php');
+		
+	}
+else{
+    $_SESSION['status'] = "You are not allowed to access admin panel";
+    header("Location: login.php");
+}
+?>
+

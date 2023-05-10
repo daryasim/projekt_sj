@@ -55,7 +55,6 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#intro" class="smoothScroll">Intro</a></li>
 				<li><a href="#overview" class="smoothScroll">Overview</a></li>
-				<li><a href="#speakers" class="smoothScroll">Speakers</a></li>
 				<li><a href="#program" class="smoothScroll">Programs</a></li>
 				<li><a href="#register" class="smoothScroll">Register</a></li>
 				<li><a href="#venue" class="smoothScroll">Venue</a></li>
@@ -422,33 +421,9 @@
 <!-- =========================
    REGISTER SECTION   
 ============================== -->
-<section id="register" class="parallax-section">
-	<div class="container">
-		<div class="row">
-
-			<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="0.6s">
-				<h2>Register Here</h2>
-				<h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
-			</div>
-
-			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">
-				<form action="#" method="post">
-					<input name="firstname" type="text" class="form-control" id="firstname" placeholder="First Name">
-					<input name="lastname" type="text" class="form-control" id="lastname" placeholder="Last Name">
-					<input name="phone" type="telephone" class="form-control" id="phone" placeholder="Phone Number">
-					<input name="email" type="email" class="form-control" id="email" placeholder="Email Address">
-					<div class="col-md-offset-6 col-md-6 col-sm-offset-1 col-sm-10">
-						<input name="submit" type="submit" class="form-control" id="submit" value="REGISTER">
-					</div>
-				</form>
-			</div>
-
-			<div class="col-md-1"></div>
-
-		</div>
-	</div>
-</section>
+<?php
+include_once "register.php";
+?>
 
 
 <!-- =========================
@@ -553,39 +528,9 @@
 <!-- =========================
     CONTACT SECTION   
 ============================== -->
-<section id="contact" class="parallax-section">
-	<div class="container">
-		<div class="row">
-
-			<div class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6" data-wow-delay="0.6s">
-				<div class="contact_des">
-					<h3>New Event</h3>
-					<p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
-					<p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.</p>
-				</div>
-			</div>
-
-
-			<div class="wow fadeInUp col-md-5 col-sm-6" data-wow-delay="0.9s">
-				<div class="contact_detail">
-					<div class="section-title">
-						<h2>Keep in touch</h2>
-					</div>
-					<form action="includes/forma.php" method="post">
-						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
-					  	<input name="email" type="email" class="form-control" id="email" placeholder="Email">
-					  	<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
-						<div class="col-md-6 col-sm-10">
-							<input name="submit" type="submit" class="form-control" id="submit" value="SEND">
-						</div>
-					</form>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
+<?php
+include_once "contact.php";
+?>
 
 
 <!-- =========================
