@@ -1,5 +1,5 @@
 <?php
-require_once 'connection.php';
+include_once 'connection.php';
 session_start();
 ?> 
 
@@ -15,6 +15,6 @@ if($array["id"]>0){
     header('Location: adminpage.php');
 }
 else{
-    header('Location: /projekt_sj/projekt/login.php');
+    header('Location: ../login.php');
 }
 ?>

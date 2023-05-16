@@ -1,3 +1,6 @@
+<?php
+include_once "header.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,38 +36,6 @@
 
 </div>
 
-
-<!-- =========================
-     NAVIGATION LINKS     
-============================== -->
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-	<div class="container">
-
-		<!-- navbar header -->
-		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-			</button>
-			<a href="#" class="navbar-brand">New Event</a>
-		</div>
-
-		<div class="collapse navbar-collapse">
-
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#intro" class="smoothScroll">Intro</a></li>
-				<li><a href="#overview" class="smoothScroll">Overview</a></li>
-				<li><a href="#program" class="smoothScroll">Programs</a></li>
-				<li><a href="#register" class="smoothScroll">Register</a></li>
-				<li><a href="#venue" class="smoothScroll">Venue</a></li>
-				<li><a href="#contact" class="smoothScroll">Contact</a></li>
-			</ul>
-
-		</div>
-
-	</div>
-</div>
 
 
 <!-- =========================
@@ -536,29 +507,9 @@ include_once "contact.php";
 <!-- =========================
     FOOTER SECTION   
 ============================== -->
-<footer>
-	<div class="container">
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-				<p class="wow fadeInUp" data-wow-delay="0.6s">Copyright &copy; 2016 Your Company 
-                    
-                    | Design: <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a></p>
-
-				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="1s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="1.3s"></a></li>
-					<li><a href="#" class="fa fa-dribbble wow fadeInUp" data-wow-delay="1.6s"></a></li>
-					<li><a href="#" class="fa fa-behance wow fadeInUp" data-wow-delay="1.9s"></a></li>
-					<li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"></a></li>
-				</ul>
-
-			</div>
-			
-		</div>
-	</div>
-</footer>
-
+<?php
+include_once "footer.php"
+?>
 
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
