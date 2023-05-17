@@ -1,5 +1,6 @@
 <?php
-session_start();
+include 'header.php';
+include '../includes/connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,28 +18,53 @@ session_start();
 <link rel="stylesheet" href="../css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/owl.theme.css">
 <link rel="stylesheet" href="../css/owl.carousel.css">
-
-<!-- Main css -->
 <link rel="stylesheet" href="../css/style.css">
-
-<!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
-
-</head>
-<?php
-if(!empty($_SESSION['user'])):
-?>
-<?php
-include 'header.php';
-?>
-<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<body>
 <section id="intro" class="parallax-section">
 	<div class="container">
 		<div class="row">
+        <table class="table table-dark" style="background-color: beige;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Email Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    $sql = "Select * from register";
+    $result=mysqli_query($conn,$sql);
+    if($result){
+        while( $row=mysqli_fetch_assoc($result)){
+            $id=$row['id'];
+            $firstname=$row['firstname'];
+            $lastname=$row['lastname'];
+            $phone=$row['phone'];
+            $email=$row['email'];
+            echo '<tr>
+            <th scope="row">'.$id.'</th>
+            <td>'.$firstname.'</td>
+            <td>'.$lastname.'</td>
+            <td>'.$phone.'</td>
+            <td>'.$email.'</td>
+            <td>
+            <button class="btn-success"><a href="">Update</a></button>
+            <button class="btn-danger"><a href="">Delete</a></button>
+            </td>
+          </tr>';
+        }
 
-			<div class="col-md-12 col-sm-12">
-				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Welcome, Admin!</h1>
-			</div>
+    }
+
+    ?>
+  </tbody>
+</table>
+
+			
 
 
 		</div>
@@ -61,12 +87,8 @@ include 'header.php';
 
 
 
-<?php else:
-echo '<h2>Ste hacker???</h2>';
-echo '<a href="../index.php">Main page</a>';
-?>         
-<?php endif 
-?>
+
+
 <script src="../js/jquery.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery.parallax.js"></script>
