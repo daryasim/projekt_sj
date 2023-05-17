@@ -23,7 +23,14 @@
   <div class="form-field">
     <button class="btn" type="submit" name="submit">Log in</button>
   </div>
+  <div class="form-field" >
+    <button onclick="location.href='index.php'" type="button" class="btn">Main Page</button>
+  </div>
 </form>
+
+
+</div>
+
 <!-- partial -->
   
 </body>
