@@ -22,7 +22,7 @@
 				<li><a href="#register" class="smoothScroll">Register</a></li>
 				<li><a href="#venue" class="smoothScroll">Venue</a></li>
 				<li><a href="#contact" class="smoothScroll">Contact</a></li>
-				<li><a href="login.php" class="smoothScroll">Login</a></li>
+				<li><a href="login.php" class="smoothScroll">Admin Login</a></li>
 			</ul>
 
 		</div>

@@ -1,6 +1,8 @@
 <?php
-include 'header.php';
-include '../includes/connection.php';
+session_start();
+if(!empty($_SESSION['user'])):
+  include 'header.php';
+  include '../includes/connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,16 +14,8 @@ include '../includes/connection.php';
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/animate.css">
-<link rel="stylesheet" href="../css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/owl.theme.css">
-<link rel="stylesheet" href="../css/owl.carousel.css">
-<link rel="stylesheet" href="../css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 <body>
-<section id="intro" class="parallax-section">
 	<div class="container">
 		<div class="row">
         <table class="table table-dark" style="background-color: beige;">
@@ -32,6 +26,7 @@ include '../includes/connection.php';
       <th scope="col">Last Name</th>
       <th scope="col">Phone Number</th>
       <th scope="col">Email Address</th>
+      <th scope="col">Options</th>
     </tr>
   </thead>
   <tbody>
@@ -52,8 +47,8 @@ include '../includes/connection.php';
             <td>'.$phone.'</td>
             <td>'.$email.'</td>
             <td>
-            <button class="btn-success"><a href="">Update</a></button>
-            <button class="btn-danger"><a href="">Delete</a></button>
+            <button class="btn-success"><a href="updatereg.php?updateid='.$id.'" class="text-dark">Update</a></button>
+            <button class="btn-danger"><a href="delr.php?deleteid='.$id.'"class="text-dark">Delete</a></button>
             </td>
           </tr>';
         }
@@ -69,7 +64,6 @@ include '../includes/connection.php';
 
 		</div>
 	</div>
-</section>
 
 
 
@@ -88,13 +82,13 @@ include '../includes/connection.php';
 
 
 
-
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/jquery.parallax.js"></script>
-<script src="../js/owl.carousel.min.js"></script>
-<script src="../js/smoothscroll.js"></script>
-<script src="../js/wow.min.js"></script>
-<script src="../js/custom.js"></script>
+<?php
+else:
+  echo '<h2>Ste hacker???</h2>';
+  echo '<a href="../index.php">Main page</a>';
+endif
+?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
 </body>
 </html>

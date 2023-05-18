@@ -1,28 +1,25 @@
-
-<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
-	<div class="container">
-
-		<!-- navbar header -->
-		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-				<span class="icon icon-bar"></span>
-			</button>
-			<a href="adminpage.php" class="navbar-brand">Admin Panel</a>
-		</div>
-
-		<div class="collapse navbar-collapse">
-
-			<ul class="nav navbar-nav navbar-right">
-                <li><a href="#speakers" class="smoothScroll">Speakers</a></li>
-				<li><a href="#program" class="smoothScroll">Programs</a></li>
-				<li><a href="registered.php" class="smoothScroll">Register</a></li>
-				<li><a href="#contact" class="smoothScroll">Contact</a></li>
-				<li><a href="../logout.php" class="smoothScroll">Logout</a></li>
-			</ul>
-
-		</div>
-
-	</div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="adminpage.php">Admin Panel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="adminpage.php">Speakers </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registered.php">Registered</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacted.php">Contacted</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="../login.php">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
