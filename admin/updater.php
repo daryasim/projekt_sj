@@ -5,17 +5,17 @@ if (!isset($_SESSION['admin_name'])) {
 
 }
     include '../includes/connection.php';
-    $id = $_GET['updatecon'];
+    $id = $_GET['updateid'];
     if (isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+        $firstname=$_POST['firstname'];
+        $lastname=$_POST['lastname'];
+        $phone=$_POST['phone'];
+        $email=$_POST['email'];
 
-        $sql = "UPDATE `form` SET `name` = '$name', `email` = '$email', `message` = '$message'  WHERE id = '$id'";
+        $sql = "UPDATE `register` SET `firstname` = '$firstname',`lastname` = '$lastname' ,`phone` = '$phone', `email` = '$email'  WHERE id = '$id'";
         $result = mysqli_query($conn, $sql);
         if ($result) {
-            echo '<script>alert("Updated successfully!"); window.location.href = "contacted.php";</script>';
-            
+            echo '<script>alert("Updated successfully!"); window.location.href = "registered.php";</script>';
         }
     }
 ?>
@@ -39,12 +39,14 @@ if (!isset($_SESSION['admin_name'])) {
             <!-- Modal -->
             <form method="post">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="name">
+                    <label for="exampleInputEmail1" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="firstname">
+                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="lastname">
+                    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="phone">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" name="email">
-                    <label for="exampleInputEmail1" class="form-label">Message</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="message">
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="email">
                     <button type="submit" class="btn btn-primary"name="submit">Update</button>
                 </div>
             </form>
@@ -54,4 +56,5 @@ if (!isset($_SESSION['admin_name'])) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
     </body>
+
     </html>

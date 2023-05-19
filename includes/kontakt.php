@@ -14,7 +14,7 @@ include 'connection.php';
         $query= mysqli_query($conn,$insert);
 
         if($query){
-        header("Location: ../index.php");
+         echo '<script>alert("Thanks for your message!"); window.location.href = "../index.php";</script>';
    
  }
 ?>

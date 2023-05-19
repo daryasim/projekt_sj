@@ -19,9 +19,9 @@
   
   <div class="form-field">
     <input type="password" placeholder="Password" name = "pass" required/>                         </div>
-  
+   
   <div class="form-field">
-    <button class="btn" type="submit" name="submit">Log in</button>
+    <button class="btn" type="submit" name="admin_login">Log in</button>
   </div>
   <div class="form-field" >
     <button onclick="location.href='index.php'" type="button" class="btn">Main Page</button>

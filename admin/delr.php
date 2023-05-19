@@ -6,7 +6,7 @@ if(isset($_GET['deleteid'])){
     $sql="delete from register where id=$id";
     $result=mysqli_query($conn,$sql);
     if($result){
-        header('Location: registered.php');
+        echo '<script>alert("Deleted successfully!"); window.location.href = "registered.php";</script>';
     } else{
         die(mysqli_error($conn));
     }
@@ -18,7 +18,7 @@ if(isset($_GET['deletecon'])){
     $sql="delete from form where id=$id";
     $result=mysqli_query($conn,$sql);
     if($result){
-        header('Location: contacted.php');
+        echo '<script>alert("Deleted successfully!"); window.location.href = "contacted.php";</script>';
     } else{
         die(mysqli_error($conn));
     }

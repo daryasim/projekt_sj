@@ -1,17 +1,11 @@
 <?php
 session_start();
-if (!empty($_SESSION['user'])) :
-    include 'header.php';
-    include '../includes/connection.php';
-    if(isset($_POST['submit'])){
-        $name=$_POST['name'];
-        $email=$_POST['email'];
-        $message=$_POST['message'];
 
-        $sql="insert into form (name,email,message)
-        values('$name','$email','$message')";
-        $result=mysqli_query($conn,$sql);
-        }
+if(!isset($_SESSION['admin_name'])){
+	header("location: no-permission.php");
+}
+include '../includes/connection.php';
+include 'header.php';
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -59,6 +53,7 @@ if (!empty($_SESSION['user'])) :
             <td>' . $email . '</td>
             <td>' . $message . '</td>
             <td>
+            <button class="btn-danger"><a href="updatereg.php?updatecon=' . $id . '"class="text-dark">Update</a></button>
             <button class="btn-danger"><a href="delr.php?deletecon=' . $id . '"class="text-dark">Delete</a></button>
             </td>
           </tr>';
@@ -85,15 +80,15 @@ if (!empty($_SESSION['user'])) :
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="completename" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="completename" name="name">
+                                    <input type="text" class="form-control" name="name">
                                 </div>
                                 <div class="form-group">
                                     <label for="completemail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="completemail" name="email">
+                                    <input type="email" class="form-control"  name="email">
                                 </div>
                                 <div class="form-group">
                                     <label for="completemessage" class="form-label">Message</label>
-                                    <input type="text" class="form-control" id="completemessage" name="message">
+                                    <input type="text" class="form-control" name="message">
                                 </div> 
                             </div>
                             <div class="modal-footer">
@@ -106,12 +101,7 @@ if (!empty($_SESSION['user'])) :
             </form>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
-        <?php
-    else :
-        echo '<h2>Ste hacker???</h2>';
-        echo '<a href="../index.php">Main page</a>';
-    endif
-        ?>
+        </div>
     </body>
 
     </html>

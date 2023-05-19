@@ -1,5 +1,10 @@
 <?php
 session_start();
+if(!isset($_SESSION['admin_name'])){
+	header("location: no-permission.php");
+}
+include '../includes/connection.php';
+include_once 'header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +21,19 @@ session_start();
 
 
 </head>
-<?php
-if(!empty($_SESSION['user'])):
-?>
-<?php
-include 'header.php';
-?>
-<body>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+<section id="intro" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s" style="text-align: center;">Welcome, Admin <?php echo $_SESSION['admin_name'] ?></h1>
+			</div>
+
+
+		</div>
+	</div>
+</section>
 
 
 
@@ -38,12 +49,9 @@ include 'header.php';
 
 
 
-<?php else:
-echo '<h2>Ste hacker???</h2>';
-echo '<a href="../index.php">Main page</a>';
-?>         
-<?php endif 
-?>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" ></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
