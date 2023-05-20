@@ -5,10 +5,9 @@
 
 			<div class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6" data-wow-delay="0.6s">
 				<div class="contact_des">
-					<h3>New Event</h3>
-					<p>Proin sodales convallis urna eu condimentum. Morbi tincidunt augue eros, vitae pretium mi condimentum eget. Suspendisse eu turpis sed elit pretium congue.</p>
-					<p>Mauris at tincidunt felis, vitae aliquam magna. Sed aliquam fringilla vestibulum. Praesent ullamcorper mauris fermentum turpis scelerisque rutrum eget eget turpis.</p>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor.</p>
+					<h3>What makes ITConf SF 🇺🇸 so special?</h3>
+					<p>We’re putting our heart and soul into crafting personal, inclusive and valuable events for all of us. To become better professionals, we try to create events without fluff, fillers, multi-track experiences or large hotel halls. Instead, we offer thoroughly curated speakers, sessions and hands-on workshops in a friendly, inspiring and exciting setting.</p>
+					<p>We’re honored to provide scholarships and discounts for large groups (5+ attendees) and students. Interested? Just contact us and we’ll sort it out!</p>
 				</div>
 			</div>
 

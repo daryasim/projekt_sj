@@ -4,8 +4,9 @@
 
 			<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="0.6s">
 				<h2>Register Here</h2>
-				<h3>Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
+				<h3>Like to learn or improve a practical skill? We got ya! On the day before and on the day after the conference, we will be offering multiple workshops. </h3>
+				<p>All workshops are hands-on and practical, so you can apply your new skills immediately.
+Our workshops offer the opportunity to get to grips with new ideas and techniques in real depth, with a full day spent on the topic of your choice. It’s a great way to round off your conference experience, and lunch will be provided, too.</p>
 			</div>
 
 			<div class="wow fadeInUp col-md-5 col-sm-5" data-wow-delay="1s">

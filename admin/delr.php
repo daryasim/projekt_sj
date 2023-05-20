@@ -49,16 +49,5 @@ if(isset($_GET['delete1'])){
     }
 }
 
-if(isset($_GET['delete2'])){
-    $id=$_GET['delete2'];
-
-    $sql="delete from seconday where id=$id";
-    $result=mysqli_query($conn,$sql);
-    if($result){
-        echo '<script>alert("Deleted successfully!"); window.location.href = "events.php";</script>';
-    } else{
-        die(mysqli_error($conn));
-    }
-}
 ?>
 

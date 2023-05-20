@@ -47,7 +47,7 @@ include_once "header.php";
 		<div class="row">
 
 			<div class="col-md-12 col-sm-12">
-				<h3 class="wow bounceIn" data-wow-delay="0.9s">July 21 - 22 in San Francisco, CA</h3>
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">July 22 in San Francisco, CA</h3>
 				<h1 class="wow fadeInUp" data-wow-delay="1.6s">Web Design Conference</h1>
 				<a href="#overview" class="btn btn-lg btn-default smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s">LEARN MORE</a>
 				<a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">REGISTER NOW</a>
@@ -67,9 +67,8 @@ include_once "header.php";
 		<div class="row">
 
 			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
-				<h3>New Event is a fully responsive one-page template for events, conferences or workshops.</h3>
-				<p>This is a Bootstrap v3.3.6 layout that is responsive and mobile friendly. You may download and modify this template for your website. Please tell your friends about templatemo.</p>
-				<p>Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+				<h3>The legendary ITConf SF 🇺🇸 is back — entirely focused on cutting-edge front-end.</p>
+				<p>From accessibility and advanced CSS to JavaScript gems and web performance. With interactive sessions, case studies and a dash of Next.js, whimsical animations and TypeScript.Our speakers are great: they are absolute experts in their field, show how they work — their setup, techniques and shortcuts — in live interactive sessions. ITConferences cover a range of topics on front-end/web, from UX design to JS and Accessibility. We make sure you can learn something from every talk, with actionable insights for your work.</p>
 			</div>
 					
 			<div class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.9s">
@@ -111,27 +110,7 @@ include_once "header.php";
 </section>
 
 
-<!-- =========================
-    VIDEO SECTION   
-============================== -->
-<section id="video" class="parallax-section">
-	<div class="container">
-		<div class="row">
 
-			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.3s">
-				<h2>Watch Video</h2>
-				<h3>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</h3>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.</p>
-			</div>
-			<div class="wow fadeInUp col-md-6 col-sm-10" data-wow-delay="1.6s">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XDPwXQjAlB0" allowfullscreen></iframe>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
 
 
 <!-- =========================
@@ -170,7 +149,7 @@ include_once "register.php";
 			<div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
 				<h2>Venue</h2>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
-				<h4>New Event</h4>
+				<h4>ITConf SF 🇺🇸</h4>
   				<h4>120 Market Street, Suite 110</h4>
   				<h4>San Francisco, CA 10110</h4>
 				<h4>Tel: 010-020-0120</h4>		

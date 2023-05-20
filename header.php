@@ -9,7 +9,7 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="index.php" class="navbar-brand">New Event</a>
+			<a href="index.php" class="navbar-brand">ITConf SF 🇺🇸</a>
 		</div>
 
 		<div class="collapse navbar-collapse">
