@@ -6,10 +6,10 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="adminpage.php">Speakers </a>
+        <a class="nav-link" href="speakers.php">Speakers </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Events</a>
+        <a class="nav-link" href="events.php">Events</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="registered.php">Registered</a>

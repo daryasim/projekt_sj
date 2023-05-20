@@ -6,6 +6,14 @@ if(!isset($_SESSION['admin_name'])){
 }
 include '../includes/connection.php';
 include 'header.php';
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+  
+    $sql = "insert into form (name,email,message)values('$name','$email','$message',)";
+    $result = mysqli_query($conn, $sql);
+  }
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -20,6 +28,12 @@ include 'header.php';
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
+    <style>
+		body {
+			background-image: url('../images/intro-bg.jpg');
+		}
+
+	</style>
 
     <body>
         <div class="container">

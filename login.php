@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style1.css">
 
 </head>
+
 <body>
 <!-- partial:index.partial.html -->
 <div id="bg"></div>
