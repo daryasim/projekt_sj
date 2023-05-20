@@ -102,8 +102,8 @@ if (isset($_POST['submit'])) {
             <td>' . $description . '</td>
             <td><img src=' . $picture . ' ./></td>
             <td>
-            <button class="btn-success"><a href="updatevents.php?update1=' . $id . '" class="text-dark">Update</a></button>
-            <button class="btn-danger"><a href="delr.php?delete1=' . $id . '"class="text-dark">Delete</a></button>
+            <button class="btn btn-secondary"><a href="updatevents.php?update1=' . $id . '" class="text-dark">Update</a></button>
+            <button class="btn btn-danger"><a href="delr.php?delete1=' . $id . '"class="text-dark">Delete</a></button>
             </td>
           </tr>';
                         }

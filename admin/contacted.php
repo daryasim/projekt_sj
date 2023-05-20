@@ -67,8 +67,8 @@ if (isset($_POST['submit'])) {
             <td>' . $email . '</td>
             <td>' . $message . '</td>
             <td>
-            <button class="btn-danger"><a href="updatereg.php?updatecon=' . $id . '"class="text-dark">Update</a></button>
-            <button class="btn-danger"><a href="delr.php?deletecon=' . $id . '"class="text-dark">Delete</a></button>
+            <button class="btn btn-secondary"><a href="updatereg.php?updatecon=' . $id . '"class="text-dark">Update</a></button>
+            <button class="btn btn-danger"><a href="delr.php?deletecon=' . $id . '"class="text-dark">Delete</a></button>
             </td>
           </tr>';
                             }

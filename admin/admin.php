@@ -14,7 +14,7 @@ if(isset($_POST['admin_login'])){
         $data = mysqli_fetch_array($checkadmin);
         $admin_name = $data['admin_name'];
         $_SESSION['admin_name']=$admin_name;
-        echo '<script>alert("Welcome, Admin!"); window.location.href = "adminpage.php";</script>';;
+        echo '<script>alert("Welcome, Admin '.$admin_name.'!"); window.location.href = "adminpage.php";</script>';;
     }else{
         echo '<script>alert("Wrong username or password!"); window.location.href = "../login.php";</script>';;
 

@@ -6,6 +6,8 @@ if (!isset($_SESSION['admin_name'])) {
 }
     include '../includes/connection.php';
     $id = $_GET['updateid'];
+    $sql=mysqli_query($conn, "select * from register where id=$id");
+    $data=mysqli_fetch_array($sql);
     if (isset($_POST['submit'])) {
         $firstname=$_POST['firstname'];
         $lastname=$_POST['lastname'];
@@ -40,13 +42,13 @@ if (!isset($_SESSION['admin_name'])) {
             <form method="post">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="firstname">
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="firstname"value="<?php echo $data ['firstname'] ?>">
                     <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="lastname">
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="lastname"value="<?php echo $data ['lastname'] ?>">
                     <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="phone">
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="phone"value="<?php echo $data ['phone'] ?>">
                     <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" name="email">
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="email"value="<?php echo $data ['email'] ?>">
                     <button type="submit" class="btn btn-primary"name="submit">Update</button>
                 </div>
             </form>

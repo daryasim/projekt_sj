@@ -87,8 +87,8 @@ if(isset($_POST['submit'])){
             <td>' . $role . '</td>
             <td><img src=' . $photo. ' ./></td>
             <td>
-            <button class="btn-success"><a href="updatesp.php?updatesp=' . $id . '" class="text-dark">Update</a></button>
-            <button class="btn-danger"><a href="delr.php?deletesp=' . $id . '"class="text-dark">Delete</a></button>
+            <button class="btn btn-secondary"><a href="updatesp.php?updatesp=' . $id . '" class="text-dark">Update</a></button>
+            <button class="btn btn-danger"><a href="delr.php?deletesp=' . $id . '"class="text-dark">Delete</a></button>
             </td>
           </tr>';
               }
